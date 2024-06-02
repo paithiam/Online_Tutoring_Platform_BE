@@ -1,0 +1,23 @@
+﻿version: '3.8'
+
+services:
+  sql-server:    
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql_server_container
+    ports:
+       - "8000:1433"
+    environment:
+       ACCEPT_EULA: "Y"
+       SA_PASSWORD: "Tanh@1911"
+       MSSQL_PID: "Developer"
+    volumes:
+      - sql-server-data:/var/opt/mssql
+    networks:
+      - BbCenter
+
+volumes:
+  sql-server-data:
+
+networks:
+  BbCenter:
+    driver: bridge

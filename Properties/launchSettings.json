@@ -1,0 +1,41 @@
+{
+  "profiles": {
+    "BbCenter": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DB_HOST": "localhost",
+        "DB_PORT": "8000",
+        "DB_USER": "sa",
+        "DB_PASSWORD": "Tanh@1911",
+        "DB_NAME": "otp_db",
+        "JWT_KEY": "thisismysecretthisismysecretthisismysecret",
+        "JWT_ISSUER": "authenticationserver",
+        "JWT_AUDIENCE": "client",
+        "JWT_SUBJECT": "accessToken",
+        "JWT_TOKEN_LIFE_TIME": "60"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:5297"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:11825",
+      "sslPort": 44395
+    }
+  }
+}
